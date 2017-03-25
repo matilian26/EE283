@@ -1,3 +1,4 @@
+A4_ED_Rep2_tracks.json
 align/rep1/A4_ED_Rep2_F.trim.PE2SE.nodup.bam
 align/rep1/A4_ED_Rep2_F.trim.PE2SE.nodup.bam.bai
 align/rep1/A4_ED_Rep2_F.trim.fastq.gz
