@@ -1,0 +1,4 @@
+data/*.dat
+*.png
+zipf_results.tgz
+LICENSE.md
