@@ -1,0 +1,23 @@
+library("RSQLite")
+library("DBI")
+library("dplyr")
+
+
+db <- src_sqlite("/bio/share/H2_1.0_OPT_0.1_mu_0.00025_sigmu0.25_traj.db")
+freqs <- tbl(db,'freqs')
+# get mean of frequency, allele age, and effect size over generations
+query = freqs %>% group_by(generation) %>% summarise(mean_freq = mean(freq), mean_aage = mean(generation - origin), mean_esize = mean(esize))
+results = collect(query, n = Inf)
+
+# plot generations vs mean frequency, allele age, and effect size
+pdf("gen_v_freq.pdf")
+plot(results2$generation, results2$mean_freq)
+dev.off()
+
+pdf("gen_v_aage.pdf")
+plot(results2$generation, results2$mean_aage)
+dev.off()
+
+pdf("gen_v_esize.pdf")
+plot(results2$generation, results2$mean_esize)
+dev.off()
