@@ -1,0 +1,4 @@
+bwa index /bio/lillyl1/Classes/EE283/Bioinformatics_Course/ref/dm6.fa
+samtools faidx /bio/lillyl1/Classes/EE283/Bioinformatics_Course/ref/dm6.fa
+java -d64 -Xmx128g -jar /data/apps/picard-tools/1.87/CreateSequenceDictionary.jar R=/bio/lillyl1/Classes/EE283/Bioinformatics_Course/ref/dm6.fa O=/bio/lillyl1/Classes/EE283/Bioinformatics_Course/ref/dm6.dict
+bowtie2-build /bio/lillyl1/Classes/EE283/Bioinformatics_Course/ref/dm6.fa /bio/lillyl1/Classes/EE283/Bioinformatics_Course/ref/dm6

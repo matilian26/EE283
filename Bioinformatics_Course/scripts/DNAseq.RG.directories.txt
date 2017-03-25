@@ -1,0 +1,4 @@
+/bio/lillyl1/Classes/EE283/Bioinformatics_Course/data/aligned_data/A7/DNAseq
+/bio/lillyl1/Classes/EE283/Bioinformatics_Course/data/aligned_data/A4/DNAseq
+/bio/lillyl1/Classes/EE283/Bioinformatics_Course/data/aligned_data/A5/DNAseq
+/bio/lillyl1/Classes/EE283/Bioinformatics_Course/data/aligned_data/A6/DNAseq

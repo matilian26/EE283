@@ -1,0 +1,20 @@
+-bash: line 13: /usr/bin/byobu-launch: No such file or directory
+
+If you are loading enthought_python with OTHER modules / software 
+'module load enthought_python' FIRST then the rest of your software.
+
+Installing libs/modules /for/ this python or using it /in conjuction/ with other 
+compiled code requires gcc/4.8.2 (not auto-loaded) 
+
+To list the packages already installed in the enthought_python module:
+' pip list --format=columns | grep -i your-target '
+
+
+Use full paths for picard jar files:
+  /data/apps/picard-tools/1.87/
+Example:
+   module load java/1.6
+   module load picard-tools/1.87
+   java -Xmx2g -jar /data/apps/picard-tools/1.87/MergeSamFiles.jar
+
+needLargeMem: trying to allocate 0 bytes (limit: 100000000000)

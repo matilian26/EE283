@@ -1,0 +1,12 @@
+/bio/lillyl1/Classes/EE283/Bioinformatics_Course/data/od_rawdata/A4/DNAseq/A4_Rep1
+/bio/lillyl1/Classes/EE283/Bioinformatics_Course/data/od_rawdata/A4/DNAseq/A4_Rep2
+/bio/lillyl1/Classes/EE283/Bioinformatics_Course/data/od_rawdata/A4/DNAseq/A4_Rep3
+/bio/lillyl1/Classes/EE283/Bioinformatics_Course/data/od_rawdata/A5/DNAseq/A5_Rep1
+/bio/lillyl1/Classes/EE283/Bioinformatics_Course/data/od_rawdata/A5/DNAseq/A5_Rep2
+/bio/lillyl1/Classes/EE283/Bioinformatics_Course/data/od_rawdata/A5/DNAseq/A5_Rep3
+/bio/lillyl1/Classes/EE283/Bioinformatics_Course/data/od_rawdata/A6/DNAseq/A6_Rep1
+/bio/lillyl1/Classes/EE283/Bioinformatics_Course/data/od_rawdata/A6/DNAseq/A6_Rep2
+/bio/lillyl1/Classes/EE283/Bioinformatics_Course/data/od_rawdata/A6/DNAseq/A6_Rep3
+/bio/lillyl1/Classes/EE283/Bioinformatics_Course/data/od_rawdata/A7/DNAseq/A7_Rep1
+/bio/lillyl1/Classes/EE283/Bioinformatics_Course/data/od_rawdata/A7/DNAseq/A7_Rep2
+/bio/lillyl1/Classes/EE283/Bioinformatics_Course/data/od_rawdata/A7/DNAseq/A7_Rep3

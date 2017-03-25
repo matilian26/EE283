@@ -1,0 +1,279 @@
+-bash: line 13: /usr/bin/byobu-launch: No such file or directory
+
+If you are loading enthought_python with OTHER modules / software 
+'module load enthought_python' FIRST then the rest of your software.
+
+Installing libs/modules /for/ this python or using it /in conjuction/ with other 
+compiled code requires gcc/4.8.2 (not auto-loaded) 
+
+To list the packages already installed in the enthought_python module:
+' pip list --format=columns | grep -i your-target '
+
+
+Use full paths for picard jar files:
+  /data/apps/picard-tools/1.87/
+Example:
+   module load java/1.6
+   module load picard-tools/1.87
+   java -Xmx2g -jar /data/apps/picard-tools/1.87/MergeSamFiles.jar
+
+
+If you are loading enthought_python with OTHER modules / software 
+'module load enthought_python' FIRST then the rest of your software.
+
+Installing libs/modules /for/ this python or using it /in conjuction/ with other 
+compiled code requires gcc/4.8.2 (not auto-loaded) 
+
+To list the packages already installed in the enthought_python module:
+' pip list --format=columns | grep -i your-target '
+
+[Fri Mar 24 00:55:37 PDT 2017] net.sf.picard.sam.MergeSamFiles INPUT=[/bio/lillyl1/Classes/EE283/Bioinformatics_Course/data/aligned_data/A7/DNAseq/10.RG.bam, /bio/lillyl1/Classes/EE283/Bioinformatics_Course/data/aligned_data/A7/DNAseq/11.RG.bam, /bio/lillyl1/Classes/EE283/Bioinformatics_Course/data/aligned_data/A7/DNAseq/12.RG.bam] OUTPUT=/bio/lillyl1/Classes/EE283/Bioinformatics_Course/data/analyzed_data/A7/DNAseq/merged.bam SORT_ORDER=coordinate ASSUME_SORTED=true VALIDATION_STRINGENCY=SILENT    MERGE_SEQUENCE_DICTIONARIES=false USE_THREADING=false VERBOSITY=INFO QUIET=false COMPRESSION_LEVEL=5 MAX_RECORDS_IN_RAM=500000 CREATE_INDEX=false CREATE_MD5_FILE=false
+[Fri Mar 24 00:55:37 PDT 2017] Executing as lillyl1@compute-2-7.local on Linux 3.10.104-1.el6.elrepo.x86_64 amd64; Java HotSpot(TM) 64-Bit Server VM 1.6.0_12-b04; Picard version: 1.87(1380)
+INFO	2017-03-24 00:55:38	MergeSamFiles	Input files are in same order as output so sorting to temp directory is not needed.
+INFO	2017-03-24 00:55:57	MergeSamFiles	Processed     1,000,000 records.  Elapsed time: 00:00:19s.  Time for last 1,000,000:   19s.  Last read position: chr2L:749,041
+INFO	2017-03-24 00:56:18	MergeSamFiles	Processed     2,000,000 records.  Elapsed time: 00:00:40s.  Time for last 1,000,000:   20s.  Last read position: chr2L:1,567,959
+INFO	2017-03-24 00:56:37	MergeSamFiles	Processed     3,000,000 records.  Elapsed time: 00:00:58s.  Time for last 1,000,000:   18s.  Last read position: chr2L:2,355,889
+INFO	2017-03-24 00:56:55	MergeSamFiles	Processed     4,000,000 records.  Elapsed time: 00:01:17s.  Time for last 1,000,000:   18s.  Last read position: chr2L:3,140,608
+INFO	2017-03-24 00:57:16	MergeSamFiles	Processed     5,000,000 records.  Elapsed time: 00:01:37s.  Time for last 1,000,000:   20s.  Last read position: chr2L:3,909,713
+INFO	2017-03-24 00:57:37	MergeSamFiles	Processed     6,000,000 records.  Elapsed time: 00:01:58s.  Time for last 1,000,000:   20s.  Last read position: chr2L:4,742,626
+INFO	2017-03-24 00:57:56	MergeSamFiles	Processed     7,000,000 records.  Elapsed time: 00:02:17s.  Time for last 1,000,000:   19s.  Last read position: chr2L:5,503,166
+INFO	2017-03-24 00:58:16	MergeSamFiles	Processed     8,000,000 records.  Elapsed time: 00:02:37s.  Time for last 1,000,000:   19s.  Last read position: chr2L:6,288,460
+INFO	2017-03-24 00:58:35	MergeSamFiles	Processed     9,000,000 records.  Elapsed time: 00:02:57s.  Time for last 1,000,000:   19s.  Last read position: chr2L:7,051,524
+INFO	2017-03-24 00:58:54	MergeSamFiles	Processed    10,000,000 records.  Elapsed time: 00:03:16s.  Time for last 1,000,000:   18s.  Last read position: chr2L:7,798,631
+INFO	2017-03-24 00:59:14	MergeSamFiles	Processed    11,000,000 records.  Elapsed time: 00:03:35s.  Time for last 1,000,000:   19s.  Last read position: chr2L:8,537,280
+INFO	2017-03-24 00:59:32	MergeSamFiles	Processed    12,000,000 records.  Elapsed time: 00:03:54s.  Time for last 1,000,000:   18s.  Last read position: chr2L:9,294,588
+INFO	2017-03-24 00:59:52	MergeSamFiles	Processed    13,000,000 records.  Elapsed time: 00:04:13s.  Time for last 1,000,000:   19s.  Last read position: chr2L:10,037,761
+INFO	2017-03-24 01:00:10	MergeSamFiles	Processed    14,000,000 records.  Elapsed time: 00:04:32s.  Time for last 1,000,000:   18s.  Last read position: chr2L:10,779,770
+INFO	2017-03-24 01:00:29	MergeSamFiles	Processed    15,000,000 records.  Elapsed time: 00:04:50s.  Time for last 1,000,000:   18s.  Last read position: chr2L:11,556,367
+INFO	2017-03-24 01:00:47	MergeSamFiles	Processed    16,000,000 records.  Elapsed time: 00:05:09s.  Time for last 1,000,000:   18s.  Last read position: chr2L:12,350,087
+INFO	2017-03-24 01:01:06	MergeSamFiles	Processed    17,000,000 records.  Elapsed time: 00:05:27s.  Time for last 1,000,000:   18s.  Last read position: chr2L:13,112,898
+INFO	2017-03-24 01:01:24	MergeSamFiles	Processed    18,000,000 records.  Elapsed time: 00:05:45s.  Time for last 1,000,000:   18s.  Last read position: chr2L:13,857,476
+INFO	2017-03-24 01:01:43	MergeSamFiles	Processed    19,000,000 records.  Elapsed time: 00:06:05s.  Time for last 1,000,000:   19s.  Last read position: chr2L:14,617,978
+INFO	2017-03-24 01:02:02	MergeSamFiles	Processed    20,000,000 records.  Elapsed time: 00:06:23s.  Time for last 1,000,000:   18s.  Last read position: chr2L:15,413,374
+INFO	2017-03-24 01:02:21	MergeSamFiles	Processed    21,000,000 records.  Elapsed time: 00:06:43s.  Time for last 1,000,000:   19s.  Last read position: chr2L:16,249,578
+INFO	2017-03-24 01:02:41	MergeSamFiles	Processed    22,000,000 records.  Elapsed time: 00:07:03s.  Time for last 1,000,000:   20s.  Last read position: chr2L:16,988,006
+INFO	2017-03-24 01:02:59	MergeSamFiles	Processed    23,000,000 records.  Elapsed time: 00:07:21s.  Time for last 1,000,000:   17s.  Last read position: chr2L:17,870,044
+INFO	2017-03-24 01:03:20	MergeSamFiles	Processed    24,000,000 records.  Elapsed time: 00:07:41s.  Time for last 1,000,000:   20s.  Last read position: chr2L:18,639,258
+INFO	2017-03-24 01:03:39	MergeSamFiles	Processed    25,000,000 records.  Elapsed time: 00:08:00s.  Time for last 1,000,000:   19s.  Last read position: chr2L:19,422,713
+INFO	2017-03-24 01:03:58	MergeSamFiles	Processed    26,000,000 records.  Elapsed time: 00:08:19s.  Time for last 1,000,000:   19s.  Last read position: chr2L:20,209,219
+INFO	2017-03-24 01:04:18	MergeSamFiles	Processed    27,000,000 records.  Elapsed time: 00:08:39s.  Time for last 1,000,000:   19s.  Last read position: chr2L:20,982,036
+INFO	2017-03-24 01:04:37	MergeSamFiles	Processed    28,000,000 records.  Elapsed time: 00:08:58s.  Time for last 1,000,000:   19s.  Last read position: chr2L:21,480,076
+INFO	2017-03-24 01:04:56	MergeSamFiles	Processed    29,000,000 records.  Elapsed time: 00:09:17s.  Time for last 1,000,000:   18s.  Last read position: chr2L:22,015,659
+INFO	2017-03-24 01:05:14	MergeSamFiles	Processed    30,000,000 records.  Elapsed time: 00:09:36s.  Time for last 1,000,000:   18s.  Last read position: chr2L:22,745,206
+INFO	2017-03-24 01:05:32	MergeSamFiles	Processed    31,000,000 records.  Elapsed time: 00:09:54s.  Time for last 1,000,000:   18s.  Last read position: chr2L:23,513,461
+INFO	2017-03-24 01:05:52	MergeSamFiles	Processed    32,000,000 records.  Elapsed time: 00:10:13s.  Time for last 1,000,000:   19s.  Last read position: chr2R:1,023,439
+INFO	2017-03-24 01:06:11	MergeSamFiles	Processed    33,000,000 records.  Elapsed time: 00:10:33s.  Time for last 1,000,000:   19s.  Last read position: chr2R:1,825,921
+INFO	2017-03-24 01:06:29	MergeSamFiles	Processed    34,000,000 records.  Elapsed time: 00:10:51s.  Time for last 1,000,000:   18s.  Last read position: chr2R:2,641,193
+INFO	2017-03-24 01:06:49	MergeSamFiles	Processed    35,000,000 records.  Elapsed time: 00:11:10s.  Time for last 1,000,000:   19s.  Last read position: chr2R:3,557,868
+INFO	2017-03-24 01:07:08	MergeSamFiles	Processed    36,000,000 records.  Elapsed time: 00:11:30s.  Time for last 1,000,000:   19s.  Last read position: chr2R:4,366,556
+INFO	2017-03-24 01:07:27	MergeSamFiles	Processed    37,000,000 records.  Elapsed time: 00:11:49s.  Time for last 1,000,000:   18s.  Last read position: chr2R:5,107,691
+INFO	2017-03-24 01:07:47	MergeSamFiles	Processed    38,000,000 records.  Elapsed time: 00:12:08s.  Time for last 1,000,000:   19s.  Last read position: chr2R:5,886,548
+INFO	2017-03-24 01:08:05	MergeSamFiles	Processed    39,000,000 records.  Elapsed time: 00:12:26s.  Time for last 1,000,000:   18s.  Last read position: chr2R:6,655,320
+INFO	2017-03-24 01:08:24	MergeSamFiles	Processed    40,000,000 records.  Elapsed time: 00:12:46s.  Time for last 1,000,000:   19s.  Last read position: chr2R:7,441,087
+INFO	2017-03-24 01:08:44	MergeSamFiles	Processed    41,000,000 records.  Elapsed time: 00:13:06s.  Time for last 1,000,000:   19s.  Last read position: chr2R:8,198,922
+INFO	2017-03-24 01:09:03	MergeSamFiles	Processed    42,000,000 records.  Elapsed time: 00:13:25s.  Time for last 1,000,000:   19s.  Last read position: chr2R:9,010,473
+INFO	2017-03-24 01:09:23	MergeSamFiles	Processed    43,000,000 records.  Elapsed time: 00:13:44s.  Time for last 1,000,000:   19s.  Last read position: chr2R:9,777,708
+INFO	2017-03-24 01:09:42	MergeSamFiles	Processed    44,000,000 records.  Elapsed time: 00:14:04s.  Time for last 1,000,000:   19s.  Last read position: chr2R:10,527,954
+INFO	2017-03-24 01:10:01	MergeSamFiles	Processed    45,000,000 records.  Elapsed time: 00:14:23s.  Time for last 1,000,000:   18s.  Last read position: chr2R:11,290,090
+INFO	2017-03-24 01:10:21	MergeSamFiles	Processed    46,000,000 records.  Elapsed time: 00:14:43s.  Time for last 1,000,000:   20s.  Last read position: chr2R:12,061,247
+INFO	2017-03-24 01:10:42	MergeSamFiles	Processed    47,000,000 records.  Elapsed time: 00:15:04s.  Time for last 1,000,000:   21s.  Last read position: chr2R:12,823,639
+INFO	2017-03-24 01:11:01	MergeSamFiles	Processed    48,000,000 records.  Elapsed time: 00:15:23s.  Time for last 1,000,000:   19s.  Last read position: chr2R:13,608,795
+INFO	2017-03-24 01:11:21	MergeSamFiles	Processed    49,000,000 records.  Elapsed time: 00:15:42s.  Time for last 1,000,000:   19s.  Last read position: chr2R:14,398,793
+INFO	2017-03-24 01:11:41	MergeSamFiles	Processed    50,000,000 records.  Elapsed time: 00:16:03s.  Time for last 1,000,000:   20s.  Last read position: chr2R:15,184,422
+INFO	2017-03-24 01:12:00	MergeSamFiles	Processed    51,000,000 records.  Elapsed time: 00:16:21s.  Time for last 1,000,000:   18s.  Last read position: chr2R:15,974,447
+INFO	2017-03-24 01:12:20	MergeSamFiles	Processed    52,000,000 records.  Elapsed time: 00:16:42s.  Time for last 1,000,000:   20s.  Last read position: chr2R:16,748,332
+INFO	2017-03-24 01:12:41	MergeSamFiles	Processed    53,000,000 records.  Elapsed time: 00:17:03s.  Time for last 1,000,000:   21s.  Last read position: chr2R:17,499,403
+INFO	2017-03-24 01:13:00	MergeSamFiles	Processed    54,000,000 records.  Elapsed time: 00:17:21s.  Time for last 1,000,000:   18s.  Last read position: chr2R:18,278,393
+INFO	2017-03-24 01:13:22	MergeSamFiles	Processed    55,000,000 records.  Elapsed time: 00:17:43s.  Time for last 1,000,000:   21s.  Last read position: chr2R:19,050,873
+INFO	2017-03-24 01:13:42	MergeSamFiles	Processed    56,000,000 records.  Elapsed time: 00:18:03s.  Time for last 1,000,000:   19s.  Last read position: chr2R:19,812,370
+INFO	2017-03-24 01:14:01	MergeSamFiles	Processed    57,000,000 records.  Elapsed time: 00:18:22s.  Time for last 1,000,000:   19s.  Last read position: chr2R:20,615,605
+INFO	2017-03-24 01:14:22	MergeSamFiles	Processed    58,000,000 records.  Elapsed time: 00:18:43s.  Time for last 1,000,000:   21s.  Last read position: chr2R:21,397,376
+INFO	2017-03-24 01:14:43	MergeSamFiles	Processed    59,000,000 records.  Elapsed time: 00:19:05s.  Time for last 1,000,000:   21s.  Last read position: chr2R:22,173,861
+INFO	2017-03-24 01:15:02	MergeSamFiles	Processed    60,000,000 records.  Elapsed time: 00:19:23s.  Time for last 1,000,000:   18s.  Last read position: chr2R:22,958,723
+INFO	2017-03-24 01:15:22	MergeSamFiles	Processed    61,000,000 records.  Elapsed time: 00:19:43s.  Time for last 1,000,000:   20s.  Last read position: chr2R:23,791,513
+INFO	2017-03-24 01:15:43	MergeSamFiles	Processed    62,000,000 records.  Elapsed time: 00:20:04s.  Time for last 1,000,000:   20s.  Last read position: chr2R:24,620,966
+INFO	2017-03-24 01:16:01	MergeSamFiles	Processed    63,000,000 records.  Elapsed time: 00:20:23s.  Time for last 1,000,000:   18s.  Last read position: chr3L:17,324
+INFO	2017-03-24 01:16:21	MergeSamFiles	Processed    64,000,000 records.  Elapsed time: 00:20:42s.  Time for last 1,000,000:   19s.  Last read position: chr3L:766,226
+INFO	2017-03-24 01:16:41	MergeSamFiles	Processed    65,000,000 records.  Elapsed time: 00:21:02s.  Time for last 1,000,000:   19s.  Last read position: chr3L:1,586,338
+INFO	2017-03-24 01:17:00	MergeSamFiles	Processed    66,000,000 records.  Elapsed time: 00:21:22s.  Time for last 1,000,000:   19s.  Last read position: chr3L:2,369,812
+INFO	2017-03-24 01:17:20	MergeSamFiles	Processed    67,000,000 records.  Elapsed time: 00:21:42s.  Time for last 1,000,000:   19s.  Last read position: chr3L:3,160,304
+INFO	2017-03-24 01:17:40	MergeSamFiles	Processed    68,000,000 records.  Elapsed time: 00:22:01s.  Time for last 1,000,000:   19s.  Last read position: chr3L:3,924,011
+INFO	2017-03-24 01:17:59	MergeSamFiles	Processed    69,000,000 records.  Elapsed time: 00:22:21s.  Time for last 1,000,000:   19s.  Last read position: chr3L:4,694,324
+INFO	2017-03-24 01:18:20	MergeSamFiles	Processed    70,000,000 records.  Elapsed time: 00:22:41s.  Time for last 1,000,000:   20s.  Last read position: chr3L:5,507,193
+INFO	2017-03-24 01:18:39	MergeSamFiles	Processed    71,000,000 records.  Elapsed time: 00:23:00s.  Time for last 1,000,000:   19s.  Last read position: chr3L:6,288,967
+INFO	2017-03-24 01:18:59	MergeSamFiles	Processed    72,000,000 records.  Elapsed time: 00:23:20s.  Time for last 1,000,000:   20s.  Last read position: chr3L:7,091,923
+INFO	2017-03-24 01:19:19	MergeSamFiles	Processed    73,000,000 records.  Elapsed time: 00:23:40s.  Time for last 1,000,000:   19s.  Last read position: chr3L:7,862,007
+INFO	2017-03-24 01:19:37	MergeSamFiles	Processed    74,000,000 records.  Elapsed time: 00:23:59s.  Time for last 1,000,000:   18s.  Last read position: chr3L:8,623,343
+INFO	2017-03-24 01:19:57	MergeSamFiles	Processed    75,000,000 records.  Elapsed time: 00:24:18s.  Time for last 1,000,000:   19s.  Last read position: chr3L:9,200,336
+INFO	2017-03-24 01:20:17	MergeSamFiles	Processed    76,000,000 records.  Elapsed time: 00:24:38s.  Time for last 1,000,000:   20s.  Last read position: chr3L:9,960,959
+INFO	2017-03-24 01:20:35	MergeSamFiles	Processed    77,000,000 records.  Elapsed time: 00:24:57s.  Time for last 1,000,000:   18s.  Last read position: chr3L:10,760,712
+INFO	2017-03-24 01:20:55	MergeSamFiles	Processed    78,000,000 records.  Elapsed time: 00:25:16s.  Time for last 1,000,000:   19s.  Last read position: chr3L:11,533,242
+INFO	2017-03-24 01:21:16	MergeSamFiles	Processed    79,000,000 records.  Elapsed time: 00:25:37s.  Time for last 1,000,000:   20s.  Last read position: chr3L:12,285,182
+INFO	2017-03-24 01:21:34	MergeSamFiles	Processed    80,000,000 records.  Elapsed time: 00:25:56s.  Time for last 1,000,000:   18s.  Last read position: chr3L:13,042,401
+INFO	2017-03-24 01:21:54	MergeSamFiles	Processed    81,000,000 records.  Elapsed time: 00:26:16s.  Time for last 1,000,000:   19s.  Last read position: chr3L:13,855,860
+INFO	2017-03-24 01:22:14	MergeSamFiles	Processed    82,000,000 records.  Elapsed time: 00:26:35s.  Time for last 1,000,000:   19s.  Last read position: chr3L:14,609,431
+INFO	2017-03-24 01:22:32	MergeSamFiles	Processed    83,000,000 records.  Elapsed time: 00:26:54s.  Time for last 1,000,000:   18s.  Last read position: chr3L:15,357,115
+INFO	2017-03-24 01:22:53	MergeSamFiles	Processed    84,000,000 records.  Elapsed time: 00:27:14s.  Time for last 1,000,000:   20s.  Last read position: chr3L:16,105,790
+INFO	2017-03-24 01:23:11	MergeSamFiles	Processed    85,000,000 records.  Elapsed time: 00:27:33s.  Time for last 1,000,000:   18s.  Last read position: chr3L:16,862,822
+INFO	2017-03-24 01:23:30	MergeSamFiles	Processed    86,000,000 records.  Elapsed time: 00:27:52s.  Time for last 1,000,000:   18s.  Last read position: chr3L:17,647,550
+INFO	2017-03-24 01:23:50	MergeSamFiles	Processed    87,000,000 records.  Elapsed time: 00:28:11s.  Time for last 1,000,000:   19s.  Last read position: chr3L:18,404,616
+INFO	2017-03-24 01:24:08	MergeSamFiles	Processed    88,000,000 records.  Elapsed time: 00:28:29s.  Time for last 1,000,000:   18s.  Last read position: chr3L:19,152,428
+INFO	2017-03-24 01:24:28	MergeSamFiles	Processed    89,000,000 records.  Elapsed time: 00:28:49s.  Time for last 1,000,000:   19s.  Last read position: chr3L:19,948,280
+INFO	2017-03-24 01:24:48	MergeSamFiles	Processed    90,000,000 records.  Elapsed time: 00:29:09s.  Time for last 1,000,000:   20s.  Last read position: chr3L:20,694,338
+INFO	2017-03-24 01:25:06	MergeSamFiles	Processed    91,000,000 records.  Elapsed time: 00:29:28s.  Time for last 1,000,000:   18s.  Last read position: chr3L:21,449,661
+INFO	2017-03-24 01:25:26	MergeSamFiles	Processed    92,000,000 records.  Elapsed time: 00:29:47s.  Time for last 1,000,000:   19s.  Last read position: chr3L:22,225,328
+INFO	2017-03-24 01:25:44	MergeSamFiles	Processed    93,000,000 records.  Elapsed time: 00:30:06s.  Time for last 1,000,000:   18s.  Last read position: chr3L:23,021,080
+INFO	2017-03-24 01:26:03	MergeSamFiles	Processed    94,000,000 records.  Elapsed time: 00:30:24s.  Time for last 1,000,000:   18s.  Last read position: chr3L:23,755,915
+INFO	2017-03-24 01:26:23	MergeSamFiles	Processed    95,000,000 records.  Elapsed time: 00:30:44s.  Time for last 1,000,000:   19s.  Last read position: chr3L:24,574,509
+INFO	2017-03-24 01:26:42	MergeSamFiles	Processed    96,000,000 records.  Elapsed time: 00:31:04s.  Time for last 1,000,000:   19s.  Last read position: chr3L:25,411,840
+INFO	2017-03-24 01:27:02	MergeSamFiles	Processed    97,000,000 records.  Elapsed time: 00:31:24s.  Time for last 1,000,000:   19s.  Last read position: chr3L:26,333,334
+INFO	2017-03-24 01:27:23	MergeSamFiles	Processed    98,000,000 records.  Elapsed time: 00:31:44s.  Time for last 1,000,000:   20s.  Last read position: chr3L:27,356,325
+INFO	2017-03-24 01:27:42	MergeSamFiles	Processed    99,000,000 records.  Elapsed time: 00:32:04s.  Time for last 1,000,000:   19s.  Last read position: chr3R:174,988
+INFO	2017-03-24 01:28:04	MergeSamFiles	Processed   100,000,000 records.  Elapsed time: 00:32:25s.  Time for last 1,000,000:   21s.  Last read position: chr3R:1,458,101
+INFO	2017-03-24 01:28:23	MergeSamFiles	Processed   101,000,000 records.  Elapsed time: 00:32:45s.  Time for last 1,000,000:   19s.  Last read position: chr3R:2,816,550
+INFO	2017-03-24 01:28:41	MergeSamFiles	Processed   102,000,000 records.  Elapsed time: 00:33:03s.  Time for last 1,000,000:   18s.  Last read position: chr3R:3,791,057
+INFO	2017-03-24 01:29:02	MergeSamFiles	Processed   103,000,000 records.  Elapsed time: 00:33:23s.  Time for last 1,000,000:   20s.  Last read position: chr3R:4,562,037
+INFO	2017-03-24 01:29:21	MergeSamFiles	Processed   104,000,000 records.  Elapsed time: 00:33:43s.  Time for last 1,000,000:   19s.  Last read position: chr3R:5,295,097
+INFO	2017-03-24 01:29:40	MergeSamFiles	Processed   105,000,000 records.  Elapsed time: 00:34:02s.  Time for last 1,000,000:   19s.  Last read position: chr3R:6,074,767
+INFO	2017-03-24 01:30:00	MergeSamFiles	Processed   106,000,000 records.  Elapsed time: 00:34:22s.  Time for last 1,000,000:   20s.  Last read position: chr3R:6,851,494
+INFO	2017-03-24 01:30:20	MergeSamFiles	Processed   107,000,000 records.  Elapsed time: 00:34:41s.  Time for last 1,000,000:   19s.  Last read position: chr3R:7,631,397
+INFO	2017-03-24 01:30:38	MergeSamFiles	Processed   108,000,000 records.  Elapsed time: 00:35:00s.  Time for last 1,000,000:   18s.  Last read position: chr3R:8,404,011
+INFO	2017-03-24 01:30:58	MergeSamFiles	Processed   109,000,000 records.  Elapsed time: 00:35:19s.  Time for last 1,000,000:   19s.  Last read position: chr3R:9,171,430
+INFO	2017-03-24 01:31:16	MergeSamFiles	Processed   110,000,000 records.  Elapsed time: 00:35:38s.  Time for last 1,000,000:   18s.  Last read position: chr3R:9,931,498
+INFO	2017-03-24 01:31:35	MergeSamFiles	Processed   111,000,000 records.  Elapsed time: 00:35:56s.  Time for last 1,000,000:   18s.  Last read position: chr3R:10,708,569
+INFO	2017-03-24 01:31:54	MergeSamFiles	Processed   112,000,000 records.  Elapsed time: 00:36:16s.  Time for last 1,000,000:   19s.  Last read position: chr3R:11,509,079
+INFO	2017-03-24 01:32:13	MergeSamFiles	Processed   113,000,000 records.  Elapsed time: 00:36:34s.  Time for last 1,000,000:   18s.  Last read position: chr3R:12,271,242
+INFO	2017-03-24 01:32:33	MergeSamFiles	Processed   114,000,000 records.  Elapsed time: 00:36:54s.  Time for last 1,000,000:   19s.  Last read position: chr3R:13,042,278
+INFO	2017-03-24 01:32:52	MergeSamFiles	Processed   115,000,000 records.  Elapsed time: 00:37:14s.  Time for last 1,000,000:   19s.  Last read position: chr3R:13,750,455
+INFO	2017-03-24 01:33:11	MergeSamFiles	Processed   116,000,000 records.  Elapsed time: 00:37:32s.  Time for last 1,000,000:   18s.  Last read position: chr3R:14,522,090
+INFO	2017-03-24 01:33:30	MergeSamFiles	Processed   117,000,000 records.  Elapsed time: 00:37:51s.  Time for last 1,000,000:   18s.  Last read position: chr3R:15,283,493
+INFO	2017-03-24 01:33:49	MergeSamFiles	Processed   118,000,000 records.  Elapsed time: 00:38:10s.  Time for last 1,000,000:   19s.  Last read position: chr3R:16,071,475
+INFO	2017-03-24 01:34:06	MergeSamFiles	Processed   119,000,000 records.  Elapsed time: 00:38:28s.  Time for last 1,000,000:   17s.  Last read position: chr3R:16,860,624
+INFO	2017-03-24 01:34:24	MergeSamFiles	Processed   120,000,000 records.  Elapsed time: 00:38:45s.  Time for last 1,000,000:   17s.  Last read position: chr3R:17,645,891
+INFO	2017-03-24 01:34:41	MergeSamFiles	Processed   121,000,000 records.  Elapsed time: 00:39:03s.  Time for last 1,000,000:   17s.  Last read position: chr3R:18,437,317
+INFO	2017-03-24 01:35:00	MergeSamFiles	Processed   122,000,000 records.  Elapsed time: 00:39:22s.  Time for last 1,000,000:   18s.  Last read position: chr3R:19,229,155
+INFO	2017-03-24 01:35:18	MergeSamFiles	Processed   123,000,000 records.  Elapsed time: 00:39:40s.  Time for last 1,000,000:   17s.  Last read position: chr3R:19,992,732
+INFO	2017-03-24 01:35:36	MergeSamFiles	Processed   124,000,000 records.  Elapsed time: 00:39:57s.  Time for last 1,000,000:   17s.  Last read position: chr3R:20,777,511
+INFO	2017-03-24 01:35:54	MergeSamFiles	Processed   125,000,000 records.  Elapsed time: 00:40:15s.  Time for last 1,000,000:   17s.  Last read position: chr3R:21,524,713
+INFO	2017-03-24 01:36:11	MergeSamFiles	Processed   126,000,000 records.  Elapsed time: 00:40:33s.  Time for last 1,000,000:   17s.  Last read position: chr3R:22,300,655
+INFO	2017-03-24 01:36:30	MergeSamFiles	Processed   127,000,000 records.  Elapsed time: 00:40:51s.  Time for last 1,000,000:   18s.  Last read position: chr3R:23,094,678
+INFO	2017-03-24 01:36:49	MergeSamFiles	Processed   128,000,000 records.  Elapsed time: 00:41:10s.  Time for last 1,000,000:   18s.  Last read position: chr3R:23,847,070
+INFO	2017-03-24 01:37:08	MergeSamFiles	Processed   129,000,000 records.  Elapsed time: 00:41:29s.  Time for last 1,000,000:   19s.  Last read position: chr3R:24,621,303
+INFO	2017-03-24 01:37:26	MergeSamFiles	Processed   130,000,000 records.  Elapsed time: 00:41:48s.  Time for last 1,000,000:   18s.  Last read position: chr3R:25,375,183
+INFO	2017-03-24 01:37:45	MergeSamFiles	Processed   131,000,000 records.  Elapsed time: 00:42:06s.  Time for last 1,000,000:   18s.  Last read position: chr3R:26,136,526
+INFO	2017-03-24 01:38:04	MergeSamFiles	Processed   132,000,000 records.  Elapsed time: 00:42:25s.  Time for last 1,000,000:   18s.  Last read position: chr3R:26,922,104
+INFO	2017-03-24 01:38:22	MergeSamFiles	Processed   133,000,000 records.  Elapsed time: 00:42:43s.  Time for last 1,000,000:   17s.  Last read position: chr3R:27,727,046
+INFO	2017-03-24 01:38:40	MergeSamFiles	Processed   134,000,000 records.  Elapsed time: 00:43:01s.  Time for last 1,000,000:   18s.  Last read position: chr3R:28,556,863
+INFO	2017-03-24 01:38:59	MergeSamFiles	Processed   135,000,000 records.  Elapsed time: 00:43:20s.  Time for last 1,000,000:   19s.  Last read position: chr3R:29,355,069
+INFO	2017-03-24 01:39:17	MergeSamFiles	Processed   136,000,000 records.  Elapsed time: 00:43:38s.  Time for last 1,000,000:   18s.  Last read position: chr3R:30,162,971
+INFO	2017-03-24 01:39:36	MergeSamFiles	Processed   137,000,000 records.  Elapsed time: 00:43:57s.  Time for last 1,000,000:   18s.  Last read position: chr3R:30,955,341
+INFO	2017-03-24 01:39:54	MergeSamFiles	Processed   138,000,000 records.  Elapsed time: 00:44:16s.  Time for last 1,000,000:   18s.  Last read position: chr3R:31,762,933
+INFO	2017-03-24 01:40:11	MergeSamFiles	Processed   139,000,000 records.  Elapsed time: 00:44:33s.  Time for last 1,000,000:   17s.  Last read position: chr4:403,606
+INFO	2017-03-24 01:40:29	MergeSamFiles	Processed   140,000,000 records.  Elapsed time: 00:44:50s.  Time for last 1,000,000:   17s.  Last read position: chr4:1,096,611
+INFO	2017-03-24 01:40:45	MergeSamFiles	Processed   141,000,000 records.  Elapsed time: 00:45:07s.  Time for last 1,000,000:   16s.  Last read position: chrM:2,570
+INFO	2017-03-24 01:41:01	MergeSamFiles	Processed   142,000,000 records.  Elapsed time: 00:45:22s.  Time for last 1,000,000:   15s.  Last read position: chrM:6,378
+INFO	2017-03-24 01:41:16	MergeSamFiles	Processed   143,000,000 records.  Elapsed time: 00:45:37s.  Time for last 1,000,000:   14s.  Last read position: chrM:11,173
+INFO	2017-03-24 01:41:31	MergeSamFiles	Processed   144,000,000 records.  Elapsed time: 00:45:52s.  Time for last 1,000,000:   15s.  Last read position: chrUn_DS483755v1:127
+INFO	2017-03-24 01:41:49	MergeSamFiles	Processed   145,000,000 records.  Elapsed time: 00:46:10s.  Time for last 1,000,000:   17s.  Last read position: chrUn_DS483906v1:1,079
+INFO	2017-03-24 01:42:05	MergeSamFiles	Processed   146,000,000 records.  Elapsed time: 00:46:26s.  Time for last 1,000,000:   16s.  Last read position: chrUn_DS484226v1:50
+INFO	2017-03-24 01:42:22	MergeSamFiles	Processed   147,000,000 records.  Elapsed time: 00:46:43s.  Time for last 1,000,000:   17s.  Last read position: chrUn_DS485820v1:34
+INFO	2017-03-24 01:42:41	MergeSamFiles	Processed   148,000,000 records.  Elapsed time: 00:47:02s.  Time for last 1,000,000:   18s.  Last read position: chrUn_DS483810v1:1,721
+INFO	2017-03-24 01:43:00	MergeSamFiles	Processed   149,000,000 records.  Elapsed time: 00:47:21s.  Time for last 1,000,000:   19s.  Last read position: chrUn_CP007120v1:39,384
+INFO	2017-03-24 01:43:17	MergeSamFiles	Processed   150,000,000 records.  Elapsed time: 00:47:39s.  Time for last 1,000,000:   17s.  Last read position: chrUn_CP007120v1:55,877
+INFO	2017-03-24 01:43:35	MergeSamFiles	Processed   151,000,000 records.  Elapsed time: 00:47:57s.  Time for last 1,000,000:   18s.  Last read position: chrUn_CP007120v1:74,177
+INFO	2017-03-24 01:43:53	MergeSamFiles	Processed   152,000,000 records.  Elapsed time: 00:48:14s.  Time for last 1,000,000:   17s.  Last read position: chrX:560,228
+INFO	2017-03-24 01:44:11	MergeSamFiles	Processed   153,000,000 records.  Elapsed time: 00:48:32s.  Time for last 1,000,000:   17s.  Last read position: chrX:1,347,626
+INFO	2017-03-24 01:44:30	MergeSamFiles	Processed   154,000,000 records.  Elapsed time: 00:48:52s.  Time for last 1,000,000:   19s.  Last read position: chrX:2,219,825
+INFO	2017-03-24 01:44:49	MergeSamFiles	Processed   155,000,000 records.  Elapsed time: 00:49:11s.  Time for last 1,000,000:   19s.  Last read position: chrX:3,060,946
+INFO	2017-03-24 01:45:07	MergeSamFiles	Processed   156,000,000 records.  Elapsed time: 00:49:28s.  Time for last 1,000,000:   17s.  Last read position: chrX:3,857,997
+INFO	2017-03-24 01:45:26	MergeSamFiles	Processed   157,000,000 records.  Elapsed time: 00:49:48s.  Time for last 1,000,000:   19s.  Last read position: chrX:4,682,639
+INFO	2017-03-24 01:45:46	MergeSamFiles	Processed   158,000,000 records.  Elapsed time: 00:50:07s.  Time for last 1,000,000:   19s.  Last read position: chrX:5,521,055
+INFO	2017-03-24 01:46:04	MergeSamFiles	Processed   159,000,000 records.  Elapsed time: 00:50:26s.  Time for last 1,000,000:   18s.  Last read position: chrX:6,352,456
+INFO	2017-03-24 01:46:22	MergeSamFiles	Processed   160,000,000 records.  Elapsed time: 00:50:44s.  Time for last 1,000,000:   18s.  Last read position: chrX:7,167,503
+INFO	2017-03-24 01:46:41	MergeSamFiles	Processed   161,000,000 records.  Elapsed time: 00:51:02s.  Time for last 1,000,000:   18s.  Last read position: chrX:7,996,299
+INFO	2017-03-24 01:47:01	MergeSamFiles	Processed   162,000,000 records.  Elapsed time: 00:51:22s.  Time for last 1,000,000:   20s.  Last read position: chrX:8,755,987
+INFO	2017-03-24 01:47:19	MergeSamFiles	Processed   163,000,000 records.  Elapsed time: 00:51:40s.  Time for last 1,000,000:   18s.  Last read position: chrX:9,592,627
+INFO	2017-03-24 01:47:38	MergeSamFiles	Processed   164,000,000 records.  Elapsed time: 00:51:59s.  Time for last 1,000,000:   18s.  Last read position: chrX:10,410,855
+INFO	2017-03-24 01:47:55	MergeSamFiles	Processed   165,000,000 records.  Elapsed time: 00:52:17s.  Time for last 1,000,000:   17s.  Last read position: chrX:11,219,699
+INFO	2017-03-24 01:48:13	MergeSamFiles	Processed   166,000,000 records.  Elapsed time: 00:52:35s.  Time for last 1,000,000:   18s.  Last read position: chrX:12,007,071
+INFO	2017-03-24 01:48:33	MergeSamFiles	Processed   167,000,000 records.  Elapsed time: 00:52:55s.  Time for last 1,000,000:   19s.  Last read position: chrX:12,860,479
+INFO	2017-03-24 01:48:52	MergeSamFiles	Processed   168,000,000 records.  Elapsed time: 00:53:14s.  Time for last 1,000,000:   19s.  Last read position: chrX:13,644,918
+INFO	2017-03-24 01:49:11	MergeSamFiles	Processed   169,000,000 records.  Elapsed time: 00:53:32s.  Time for last 1,000,000:   18s.  Last read position: chrX:14,497,754
+INFO	2017-03-24 01:49:29	MergeSamFiles	Processed   170,000,000 records.  Elapsed time: 00:53:51s.  Time for last 1,000,000:   18s.  Last read position: chrX:15,294,544
+INFO	2017-03-24 01:49:48	MergeSamFiles	Processed   171,000,000 records.  Elapsed time: 00:54:09s.  Time for last 1,000,000:   18s.  Last read position: chrX:16,062,411
+INFO	2017-03-24 01:50:07	MergeSamFiles	Processed   172,000,000 records.  Elapsed time: 00:54:28s.  Time for last 1,000,000:   18s.  Last read position: chrX:16,820,681
+INFO	2017-03-24 01:50:25	MergeSamFiles	Processed   173,000,000 records.  Elapsed time: 00:54:47s.  Time for last 1,000,000:   18s.  Last read position: chrX:17,610,051
+INFO	2017-03-24 01:50:43	MergeSamFiles	Processed   174,000,000 records.  Elapsed time: 00:55:05s.  Time for last 1,000,000:   18s.  Last read position: chrX:18,429,099
+INFO	2017-03-24 01:51:03	MergeSamFiles	Processed   175,000,000 records.  Elapsed time: 00:55:24s.  Time for last 1,000,000:   19s.  Last read position: chrX:19,258,434
+INFO	2017-03-24 01:51:21	MergeSamFiles	Processed   176,000,000 records.  Elapsed time: 00:55:43s.  Time for last 1,000,000:   18s.  Last read position: chrX:20,101,967
+INFO	2017-03-24 01:51:39	MergeSamFiles	Processed   177,000,000 records.  Elapsed time: 00:56:00s.  Time for last 1,000,000:   17s.  Last read position: chrX:20,969,852
+INFO	2017-03-24 01:51:58	MergeSamFiles	Processed   178,000,000 records.  Elapsed time: 00:56:19s.  Time for last 1,000,000:   18s.  Last read position: chrX:21,780,284
+INFO	2017-03-24 01:52:15	MergeSamFiles	Processed   179,000,000 records.  Elapsed time: 00:56:37s.  Time for last 1,000,000:   17s.  Last read position: chrX:22,499,378
+INFO	2017-03-24 01:52:34	MergeSamFiles	Processed   180,000,000 records.  Elapsed time: 00:56:55s.  Time for last 1,000,000:   18s.  Last read position: chrX:23,216,605
+INFO	2017-03-24 01:52:52	MergeSamFiles	Processed   181,000,000 records.  Elapsed time: 00:57:14s.  Time for last 1,000,000:   18s.  Last read position: chrX_DS484284v1_random:188
+INFO	2017-03-24 01:53:09	MergeSamFiles	Processed   182,000,000 records.  Elapsed time: 00:57:31s.  Time for last 1,000,000:   17s.  Last read position: chrX_DS485909v1_random:437
+INFO	2017-03-24 01:53:28	MergeSamFiles	Processed   183,000,000 records.  Elapsed time: 00:57:50s.  Time for last 1,000,000:   18s.  Last read position: chrX_DS484974v1_random:616
+INFO	2017-03-24 01:53:47	MergeSamFiles	Processed   184,000,000 records.  Elapsed time: 00:58:09s.  Time for last 1,000,000:   18s.  Last read position: chrY:323,907
+INFO	2017-03-24 01:54:05	MergeSamFiles	Processed   185,000,000 records.  Elapsed time: 00:58:27s.  Time for last 1,000,000:   18s.  Last read position: chrY:3,174,807
+INFO	2017-03-24 01:54:22	MergeSamFiles	Processed   186,000,000 records.  Elapsed time: 00:58:43s.  Time for last 1,000,000:   16s.  Last read position: */*
+INFO	2017-03-24 01:54:25	MergeSamFiles	Finished reading inputs.
+[Fri Mar 24 01:54:25 PDT 2017] net.sf.picard.sam.MergeSamFiles done. Elapsed time: 58.81 minutes.
+Runtime.totalMemory()=8470528000
+##### ERROR ------------------------------------------------------------------------------------------
+##### ERROR A USER ERROR has occurred (version 2.4-7-g5e89f01): 
+##### ERROR The invalid arguments or inputs must be corrected before the GATK can proceed
+##### ERROR Please do not post this error to the GATK forum
+##### ERROR
+##### ERROR See the documentation (rerun with -h) for this tool to view allowable command-line arguments.
+##### ERROR Visit our website and forum for extensive documentation and answers to 
+##### ERROR commonly asked questions http://www.broadinstitute.org/gatk
+##### ERROR
+##### ERROR MESSAGE: SAM/BAM file SAMFileReader{/bio/lillyl1/Classes/EE283/Bioinformatics_Course/data/analyzed_data/A7/DNAseq/merged.bam} appears to be using the wrong encoding for quality scores: we encountered an extremely high quality score of 67; please see the GATK --help documentation for options related to this error
+##### ERROR ------------------------------------------------------------------------------------------
+##### ERROR ------------------------------------------------------------------------------------------
+##### ERROR A USER ERROR has occurred (version 2.4-7-g5e89f01): 
+##### ERROR The invalid arguments or inputs must be corrected before the GATK can proceed
+##### ERROR Please do not post this error to the GATK forum
+##### ERROR
+##### ERROR See the documentation (rerun with -h) for this tool to view allowable command-line arguments.
+##### ERROR Visit our website and forum for extensive documentation and answers to 
+##### ERROR commonly asked questions http://www.broadinstitute.org/gatk
+##### ERROR
+##### ERROR MESSAGE: Couldn't read file /bio/lillyl1/Classes/EE283/Bioinformatics_Course/data/analyzed_data/A7/DNAseq/merged.intervals because The interval file does not exist.
+##### ERROR ------------------------------------------------------------------------------------------
+##### ERROR ------------------------------------------------------------------------------------------
+##### ERROR A USER ERROR has occurred (version 2.4-7-g5e89f01): 
+##### ERROR The invalid arguments or inputs must be corrected before the GATK can proceed
+##### ERROR Please do not post this error to the GATK forum
+##### ERROR
+##### ERROR See the documentation (rerun with -h) for this tool to view allowable command-line arguments.
+##### ERROR Visit our website and forum for extensive documentation and answers to 
+##### ERROR commonly asked questions http://www.broadinstitute.org/gatk
+##### ERROR
+##### ERROR MESSAGE: Couldn't read file /bio/lillyl1/Classes/EE283/Bioinformatics_Course/data/analyzed_data/A7/DNAseq/merged-realigned.bam because java.io.FileNotFoundException: /bio/lillyl1/Classes/EE283/Bioinformatics_Course/data/analyzed_data/A7/DNAseq/merged-realigned.bam (No such file or directory)
+##### ERROR ------------------------------------------------------------------------------------------
+##### ERROR ------------------------------------------------------------------------------------------
+##### ERROR A USER ERROR has occurred (version 2.4-7-g5e89f01): 
+##### ERROR The invalid arguments or inputs must be corrected before the GATK can proceed
+##### ERROR Please do not post this error to the GATK forum
+##### ERROR
+##### ERROR See the documentation (rerun with -h) for this tool to view allowable command-line arguments.
+##### ERROR Visit our website and forum for extensive documentation and answers to 
+##### ERROR commonly asked questions http://www.broadinstitute.org/gatk
+##### ERROR
+##### ERROR MESSAGE: Couldn't read file /bio/lillyl1/Classes/EE283/Bioinformatics_Course/data/analyzed_data/A7/DNAseq/merged-realigned.bam because java.io.FileNotFoundException: /bio/lillyl1/Classes/EE283/Bioinformatics_Course/data/analyzed_data/A7/DNAseq/merged-realigned.bam (No such file or directory)
+##### ERROR ------------------------------------------------------------------------------------------
+##### ERROR ------------------------------------------------------------------------------------------
+##### ERROR A USER ERROR has occurred (version 2.4-7-g5e89f01): 
+##### ERROR The invalid arguments or inputs must be corrected before the GATK can proceed
+##### ERROR Please do not post this error to the GATK forum
+##### ERROR
+##### ERROR See the documentation (rerun with -h) for this tool to view allowable command-line arguments.
+##### ERROR Visit our website and forum for extensive documentation and answers to 
+##### ERROR commonly asked questions http://www.broadinstitute.org/gatk
+##### ERROR
+##### ERROR MESSAGE: Couldn't read file /bio/lillyl1/Classes/EE283/Bioinformatics_Course/data/analyzed_data/A7/DNAseq/rawSNPS-Q30.vcf because file does not exist
+##### ERROR ------------------------------------------------------------------------------------------
+cat: /bio/lillyl1/Classes/EE283/Bioinformatics_Course/data/analyzed_data/A7/DNAseq/Q30-SNPs.vcf: No such file or directory
+cat: /bio/lillyl1/Classes/EE283/Bioinformatics_Course/data/analyzed_data/A7/DNAseq/inDels-Q30.vcf: No such file or directory
+The preset string not recognised: '/bio/lillyl1/Classes/EE283/Bioinformatics_Course/data/analyzed_data/A7/DNAseq/pass.inDels.vcf.gz'

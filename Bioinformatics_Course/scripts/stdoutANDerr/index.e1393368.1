@@ -1,0 +1,36 @@
+
+If you are loading enthought_python with OTHER modules / software 
+'module load enthought_python' FIRST then the rest of your software.
+
+Installing libs/modules /for/ this python or using it /in conjuction/ with other 
+compiled code requires gcc/4.8.2 (not auto-loaded) 
+
+To list the packages already installed in the enthought_python module:
+' pip list --format=columns | grep -i your-target '
+
+
+Use full paths for picard jar files:
+  /data/apps/picard-tools/1.87/
+Example:
+   module load java/1.6
+   module load picard-tools/1.87
+   java -Xmx2g -jar /data/apps/picard-tools/1.87/MergeSamFiles.jar
+
+[bwa_index] Pack FASTA... 2.20 sec
+[bwa_index] Construct BWT for the packed sequence...
+[BWTIncCreate] textLength=287452004, availableWord=32225820
+[BWTIncConstructFromPacked] 10 iterations done. 53158068 characters processed.
+[BWTIncConstructFromPacked] 20 iterations done. 98205524 characters processed.
+[BWTIncConstructFromPacked] 30 iterations done. 138239796 characters processed.
+[BWTIncConstructFromPacked] 40 iterations done. 173818340 characters processed.
+[BWTIncConstructFromPacked] 50 iterations done. 205436596 characters processed.
+[BWTIncConstructFromPacked] 60 iterations done. 233534948 characters processed.
+[BWTIncConstructFromPacked] 70 iterations done. 258504820 characters processed.
+[BWTIncConstructFromPacked] 80 iterations done. 280694052 characters processed.
+[bwa_index] 117.26 seconds elapse.
+[bwa_index] Update BWT... 1.09 sec
+[bwa_index] Pack forward-only FASTA... 1.38 sec
+[bwa_index] Construct SA from BWT and Occ... 45.72 sec
+[main] Version: 0.7.8-r455
+[main] CMD: bwa index /bio/lillyl1/Classes/EE283/Bioinformatics_Course/ref/dm6.fa
+[main] Real time: 174.642 sec; CPU: 167.662 sec

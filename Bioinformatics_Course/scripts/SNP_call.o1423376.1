@@ -1,0 +1,84 @@
+INFO  01:59:08,853 HelpFormatter - -------------------------------------------------------------------------------- 
+INFO  01:59:08,856 HelpFormatter - The Genome Analysis Toolkit (GATK) v2.4-7-g5e89f01, Compiled 2013/03/06 01:01:28 
+INFO  01:59:08,856 HelpFormatter - Copyright (c) 2010 The Broad Institute 
+INFO  01:59:08,856 HelpFormatter - For support and documentation go to http://www.broadinstitute.org/gatk 
+INFO  01:59:08,862 HelpFormatter - Program Args: -T RealignerTargetCreator -nt 8 -R /bio/lillyl1/Classes/EE283/Bioinformatics_Course/ref/dm6.fa -I /bio/lillyl1/Classes/EE283/Bioinformatics_Course/data/analyzed_data/A7/DNAseq/merged.bam --minReadsAtLocus 4 -o /bio/lillyl1/Classes/EE283/Bioinformatics_Course/data/analyzed_data/A7/DNAseq/merged.intervals 
+INFO  01:59:08,863 HelpFormatter - Date/Time: 2017/03/24 01:59:08 
+INFO  01:59:08,863 HelpFormatter - -------------------------------------------------------------------------------- 
+INFO  01:59:08,863 HelpFormatter - -------------------------------------------------------------------------------- 
+INFO  01:59:09,844 GenomeAnalysisEngine - Strictness is SILENT 
+INFO  01:59:10,508 GenomeAnalysisEngine - Downsampling Settings: Method: BY_SAMPLE, Target Coverage: 1000 
+INFO  01:59:10,517 SAMDataSource$SAMReaders - Initializing SAMRecords in serial 
+INFO  01:59:10,635 SAMDataSource$SAMReaders - Done initializing BAM readers: total time 0.11 
+INFO  01:59:10,737 MicroScheduler - Running the GATK in parallel mode with 8 total threads, 1 CPU thread(s) for each of 8 data thread(s), of 64 processors available on this machine 
+INFO  01:59:10,853 GenomeAnalysisEngine - Creating shard strategy for 1 BAM files 
+INFO  01:59:12,183 GenomeAnalysisEngine - Done creating shard strategy 
+INFO  01:59:12,183 ProgressMeter - [INITIALIZATION COMPLETE; STARTING PROCESSING] 
+INFO  01:59:12,185 ProgressMeter -        Location processed.sites  runtime per.1M.sites completed total.runtime remaining 
+INFO  01:59:12,217 SAMDataSource$SAMReaders - Initializing SAMRecords in serial 
+INFO  01:59:12,290 SAMDataSource$SAMReaders - Done initializing BAM readers: total time 0.07 
+INFO  01:59:12,292 SAMDataSource$SAMReaders - Initializing SAMRecords in serial 
+INFO  01:59:12,335 SAMDataSource$SAMReaders - Done initializing BAM readers: total time 0.04 
+INFO  01:59:12,337 SAMDataSource$SAMReaders - Initializing SAMRecords in serial 
+INFO  01:59:12,378 SAMDataSource$SAMReaders - Done initializing BAM readers: total time 0.04 
+INFO  01:59:12,379 SAMDataSource$SAMReaders - Initializing SAMRecords in serial 
+INFO  01:59:12,422 SAMDataSource$SAMReaders - Done initializing BAM readers: total time 0.04 
+INFO  01:59:12,423 SAMDataSource$SAMReaders - Initializing SAMRecords in serial 
+INFO  01:59:12,452 SAMDataSource$SAMReaders - Done initializing BAM readers: total time 0.03 
+INFO  01:59:12,453 SAMDataSource$SAMReaders - Initializing SAMRecords in serial 
+INFO  01:59:12,665 SAMDataSource$SAMReaders - Done initializing BAM readers: total time 0.21 
+INFO  01:59:12,666 SAMDataSource$SAMReaders - Initializing SAMRecords in serial 
+INFO  01:59:12,725 SAMDataSource$SAMReaders - Done initializing BAM readers: total time 0.06 
+INFO  01:59:12,861 SAMDataSource$SAMReaders - Initializing SAMRecords in serial 
+INFO  01:59:12,943 SAMDataSource$SAMReaders - Done initializing BAM readers: total time 0.08 
+WARN  01:59:13,795 RestStorageService - Error Response: PUT '/GATK_Run_Reports/ZJCtqFkqAYSXDAid1nyeyP8PY5yb8D7F.report.xml.gz' -- ResponseCode: 403, ResponseStatus: Forbidden, Request Headers: [Content-Length: 1294, Content-MD5: zDz57FnUQPnAdKGlPSKn/g==, Content-Type: application/octet-stream, x-amz-meta-md5-hash: cc3cf9ec59d440f9c074a1a53d22a7fe, Date: Fri, 24 Mar 2017 08:59:13 GMT, Authorization: AWS AKIAIMHBU7X642TCHQ2A:ucP+7Afdo4M8bY8qcjKlvMZ60fc=, User-Agent: JetS3t/0.8.1 (Linux/3.10.104-1.el6.elrepo.x86_64; amd64; en; JVM 1.6.0_12), Host: s3.amazonaws.com, Expect: 100-continue], Response Headers: [x-amz-request-id: FB80C5F89D78DF1C, x-amz-id-2: aCx3d063lhf4vndqrmJpMbQbW3d9wddefmL+9x76T3adaqFDqYprrUvX1icc9VHD, Content-Type: application/xml, Transfer-Encoding: chunked, Date: Fri, 24 Mar 2017 08:59:13 GMT, Connection: close, Server: AmazonS3] 
+INFO  01:59:18,273 HelpFormatter - -------------------------------------------------------------------------------- 
+INFO  01:59:18,276 HelpFormatter - The Genome Analysis Toolkit (GATK) v2.4-7-g5e89f01, Compiled 2013/03/06 01:01:28 
+INFO  01:59:18,276 HelpFormatter - Copyright (c) 2010 The Broad Institute 
+INFO  01:59:18,277 HelpFormatter - For support and documentation go to http://www.broadinstitute.org/gatk 
+INFO  01:59:18,283 HelpFormatter - Program Args: -T IndelRealigner -R /bio/lillyl1/Classes/EE283/Bioinformatics_Course/ref/dm6.fa -I /bio/lillyl1/Classes/EE283/Bioinformatics_Course/data/analyzed_data/A7/DNAseq/merged.bam -targetIntervals /bio/lillyl1/Classes/EE283/Bioinformatics_Course/data/analyzed_data/A7/DNAseq/merged.intervals -LOD 3.0 -o /bio/lillyl1/Classes/EE283/Bioinformatics_Course/data/analyzed_data/A7/DNAseq/merged-realigned.bam 
+INFO  01:59:18,283 HelpFormatter - Date/Time: 2017/03/24 01:59:18 
+INFO  01:59:18,283 HelpFormatter - -------------------------------------------------------------------------------- 
+INFO  01:59:18,284 HelpFormatter - -------------------------------------------------------------------------------- 
+INFO  01:59:19,423 GenomeAnalysisEngine - Strictness is SILENT 
+INFO  01:59:19,983 GenomeAnalysisEngine - Downsampling Settings: No downsampling 
+INFO  01:59:19,991 SAMDataSource$SAMReaders - Initializing SAMRecords in serial 
+INFO  01:59:20,090 SAMDataSource$SAMReaders - Done initializing BAM readers: total time 0.10 
+INFO  01:59:20,254 GenomeAnalysisEngine - Creating shard strategy for 1 BAM files 
+INFO  01:59:20,260 GenomeAnalysisEngine - Done creating shard strategy 
+INFO  01:59:20,260 ProgressMeter - [INITIALIZATION COMPLETE; STARTING PROCESSING] 
+INFO  01:59:20,261 ProgressMeter -        Location processed.reads  runtime per.1M.reads completed total.runtime remaining 
+WARN  01:59:21,788 RestStorageService - Error Response: PUT '/GATK_Run_Reports/Sgm4tvUCqYctfIoFGLjAVfZhQqA75JTZ.report.xml.gz' -- ResponseCode: 403, ResponseStatus: Forbidden, Request Headers: [Content-Length: 893, Content-MD5: qnehYM7e5IzABkLVCRdQCQ==, Content-Type: application/octet-stream, x-amz-meta-md5-hash: aa77a160cedee48cc00642d509175009, Date: Fri, 24 Mar 2017 08:59:21 GMT, Authorization: AWS AKIAIMHBU7X642TCHQ2A:VF6f8gXMAaQ11TuciTxGxEVqhHY=, User-Agent: JetS3t/0.8.1 (Linux/3.10.104-1.el6.elrepo.x86_64; amd64; en; JVM 1.6.0_12), Host: s3.amazonaws.com, Expect: 100-continue], Response Headers: [x-amz-request-id: CCAD8C7CCD57974E, x-amz-id-2: 3FHmdHbUKGxIgmSn2uQWOvMK/btFoeiyAirtVpBgWJGGoYVu/Bb6x+6QE4GAz773gQg991nqlc0=, Content-Type: application/xml, Transfer-Encoding: chunked, Date: Fri, 24 Mar 2017 08:59:21 GMT, Connection: close, Server: AmazonS3] 
+INFO  01:59:26,271 HelpFormatter - -------------------------------------------------------------------------------- 
+INFO  01:59:26,274 HelpFormatter - The Genome Analysis Toolkit (GATK) v2.4-7-g5e89f01, Compiled 2013/03/06 01:01:28 
+INFO  01:59:26,274 HelpFormatter - Copyright (c) 2010 The Broad Institute 
+INFO  01:59:26,275 HelpFormatter - For support and documentation go to http://www.broadinstitute.org/gatk 
+INFO  01:59:26,281 HelpFormatter - Program Args: -T UnifiedGenotyper -nt 8 -R /bio/lillyl1/Classes/EE283/Bioinformatics_Course/ref/dm6.fa -I /bio/lillyl1/Classes/EE283/Bioinformatics_Course/data/analyzed_data/A7/DNAseq/merged-realigned.bam -gt_mode DISCOVERY -stand_call_conf 30 -stand_emit_conf 10 -o /bio/lillyl1/Classes/EE283/Bioinformatics_Course/data/analyzed_data/A7/DNAseq/rawSNPS-Q30.vcf 
+INFO  01:59:26,281 HelpFormatter - Date/Time: 2017/03/24 01:59:26 
+INFO  01:59:26,281 HelpFormatter - -------------------------------------------------------------------------------- 
+INFO  01:59:26,282 HelpFormatter - -------------------------------------------------------------------------------- 
+INFO  01:59:27,297 GenomeAnalysisEngine - Strictness is SILENT 
+INFO  01:59:27,964 GenomeAnalysisEngine - Downsampling Settings: Method: BY_SAMPLE, Target Coverage: 250 
+INFO  01:59:27,973 SAMDataSource$SAMReaders - Initializing SAMRecords in serial 
+WARN  01:59:28,844 RestStorageService - Error Response: PUT '/GATK_Run_Reports/NQVPoeaHeVs5w1feI4VWducxh6elw1ml.report.xml.gz' -- ResponseCode: 403, ResponseStatus: Forbidden, Request Headers: [Content-Length: 925, Content-MD5: ZZI/B4EsD/LS/36tmO9RiA==, Content-Type: application/octet-stream, x-amz-meta-md5-hash: 65923f07812c0ff2d2ff7ead98ef5188, Date: Fri, 24 Mar 2017 08:59:28 GMT, Authorization: AWS AKIAIMHBU7X642TCHQ2A:l63Gf/q1X+NwAsCLN+yYcrPwCvg=, User-Agent: JetS3t/0.8.1 (Linux/3.10.104-1.el6.elrepo.x86_64; amd64; en; JVM 1.6.0_12), Host: s3.amazonaws.com, Expect: 100-continue], Response Headers: [x-amz-request-id: 89A8B4EE72BDFEB4, x-amz-id-2: 33SAbc+xhVg0eNBX5p3f5y28CCVjWrOs0Ae9ggTkp7Kqv3w4rW6LEd0NwaibTangHoN8ErqezYs=, Content-Type: application/xml, Transfer-Encoding: chunked, Date: Fri, 24 Mar 2017 08:59:27 GMT, Connection: close, Server: AmazonS3] 
+INFO  01:59:33,243 HelpFormatter - -------------------------------------------------------------------------------- 
+INFO  01:59:33,246 HelpFormatter - The Genome Analysis Toolkit (GATK) v2.4-7-g5e89f01, Compiled 2013/03/06 01:01:28 
+INFO  01:59:33,246 HelpFormatter - Copyright (c) 2010 The Broad Institute 
+INFO  01:59:33,246 HelpFormatter - For support and documentation go to http://www.broadinstitute.org/gatk 
+INFO  01:59:33,252 HelpFormatter - Program Args: -T UnifiedGenotyper -nt 8 -R /bio/lillyl1/Classes/EE283/Bioinformatics_Course/ref/dm6.fa -I /bio/lillyl1/Classes/EE283/Bioinformatics_Course/data/analyzed_data/A7/DNAseq/merged-realigned.bam -gt_mode DISCOVERY -glm INDEL -stand_call_conf 30 -stand_emit_conf 10 -o /bio/lillyl1/Classes/EE283/Bioinformatics_Course/data/analyzed_data/A7/DNAseq/inDels-Q30.vcf 
+INFO  01:59:33,253 HelpFormatter - Date/Time: 2017/03/24 01:59:33 
+INFO  01:59:33,253 HelpFormatter - -------------------------------------------------------------------------------- 
+INFO  01:59:33,253 HelpFormatter - -------------------------------------------------------------------------------- 
+INFO  01:59:34,299 GenomeAnalysisEngine - Strictness is SILENT 
+INFO  01:59:35,021 GenomeAnalysisEngine - Downsampling Settings: Method: BY_SAMPLE, Target Coverage: 250 
+INFO  01:59:35,030 SAMDataSource$SAMReaders - Initializing SAMRecords in serial 
+WARN  01:59:36,455 RestStorageService - Error Response: PUT '/GATK_Run_Reports/jIu1TiWOnbnMle0PCNo6ZWlTPmaX62hA.report.xml.gz' -- ResponseCode: 403, ResponseStatus: Forbidden, Request Headers: [Content-Length: 929, Content-MD5: CBIuQebUIoGVkHHiDu68Xw==, Content-Type: application/octet-stream, x-amz-meta-md5-hash: 08122e41e6d42281959071e20eeebc5f, Date: Fri, 24 Mar 2017 08:59:35 GMT, Authorization: AWS AKIAIMHBU7X642TCHQ2A:6N4M67qlY0CxmuRR/hIYoAjgc3g=, User-Agent: JetS3t/0.8.1 (Linux/3.10.104-1.el6.elrepo.x86_64; amd64; en; JVM 1.6.0_12), Host: s3.amazonaws.com, Expect: 100-continue], Response Headers: [x-amz-request-id: 10878BBAAA2EC49D, x-amz-id-2: JtA+yQFoo2LcEU6tAnPQZyeMzstE+MPaPHmMGIdsk78pMMoNcCnU9scgf+h6ko1jnIXkdAOtl2k=, Content-Type: application/xml, Transfer-Encoding: chunked, Date: Fri, 24 Mar 2017 08:59:36 GMT, Connection: close, Server: AmazonS3] 
+INFO  01:59:40,957 HelpFormatter - -------------------------------------------------------------------------------- 
+INFO  01:59:40,960 HelpFormatter - The Genome Analysis Toolkit (GATK) v2.4-7-g5e89f01, Compiled 2013/03/06 01:01:28 
+INFO  01:59:40,960 HelpFormatter - Copyright (c) 2010 The Broad Institute 
+INFO  01:59:40,960 HelpFormatter - For support and documentation go to http://www.broadinstitute.org/gatk 
+INFO  01:59:40,967 HelpFormatter - Program Args: -T VariantFiltration -R /bio/lillyl1/Classes/EE283/Bioinformatics_Course/ref/dm6.fa -V /bio/lillyl1/Classes/EE283/Bioinformatics_Course/data/analyzed_data/A7/DNAseq/rawSNPS-Q30.vcf --mask /bio/lillyl1/Classes/EE283/Bioinformatics_Course/data/analyzed_data/A7/DNAseq/inDels-Q30.vcf --maskExtension 5 --maskName InDel --clusterWindowSize 10 --filterExpression MQ0 >= 4 && ((MQ0 / (1.0 * DP)) > 0.1) --filterName BadValidation --filterExpression QUAL < 30.0 --filterName LowQual --filterExpression QD < 5.0 --filterName LowVQCBD --filterExpression FS > 60 --filterName FisherStrand -o /bio/lillyl1/Classes/EE283/Bioinformatics_Course/data/analyzed_data/A7/DNAseq/Q30-SNPs.vcf 
+INFO  01:59:40,967 HelpFormatter - Date/Time: 2017/03/24 01:59:40 
+INFO  01:59:40,967 HelpFormatter - -------------------------------------------------------------------------------- 
+INFO  01:59:40,968 HelpFormatter - -------------------------------------------------------------------------------- 
+WARN  01:59:42,778 RestStorageService - Error Response: PUT '/GATK_Run_Reports/b2irwpkii5okzMQYAciJ8Lulaz96hyWS.report.xml.gz' -- ResponseCode: 403, ResponseStatus: Forbidden, Request Headers: [Content-Length: 859, Content-MD5: +i8SUnXjWLF1qCMSyttMbg==, Content-Type: application/octet-stream, x-amz-meta-md5-hash: fa2f125275e358b175a82312cadb4c6e, Date: Fri, 24 Mar 2017 08:59:42 GMT, Authorization: AWS AKIAIMHBU7X642TCHQ2A:K8KFi/8U2Zkr9gLRHmcqr+v3q6c=, User-Agent: JetS3t/0.8.1 (Linux/3.10.104-1.el6.elrepo.x86_64; amd64; en; JVM 1.6.0_12), Host: s3.amazonaws.com, Expect: 100-continue], Response Headers: [x-amz-request-id: F35AB92B4A940337, x-amz-id-2: 1kVz3VlEp4liG3EPm/0ZVo2/ulBOZ7RNbEvdPeHXc0WRYTemNqamdKMXJXWwll8ebnKA8BD3Cmo=, Content-Type: application/xml, Transfer-Encoding: chunked, Date: Fri, 24 Mar 2017 08:59:42 GMT, Connection: close, Server: AmazonS3] 
